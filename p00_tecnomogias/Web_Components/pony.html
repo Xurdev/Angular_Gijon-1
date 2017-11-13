@@ -1,0 +1,27 @@
+<template id="pony-tpl"> 
+    <style> 
+    h1 { color: orange; } 
+    </style> 
+    <h1>Curso de Angular</h1> 
+</template> 
+
+<script>
+    // let's extend HTMLElement 
+    let PonyComponentProto = Object.create(HTMLElement.prototype); 
+    // add some template in the Shadow DOM 
+    PonyComponentProto.createdCallback = function() { 
+        // add some template using a lifecycle and the template tag 
+        let oImport = document.querySelector('link[rel="import"]').import; 
+        const template = oImport.querySelector("template"); 
+        let clone = document.importNode(template.content, true); 
+        let shadow = this.createShadowRoot(); 
+        this.createShadowRoot().appendChild(clone); 
+    }; 
+
+    // new element 
+    var PonyComponent = document.registerElement('ns-pony',{prototype: PonyComponentProto} ); 
+    // insert in current body 
+    document.body.appendChild(new PonyComponent()); 
+
+</script>
+
