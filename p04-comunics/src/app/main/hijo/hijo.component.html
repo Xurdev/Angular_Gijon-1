@@ -6,6 +6,11 @@
                Componente hijo
               </div>
               <div class="card-body">
+                <p>Me llamo {{hijoNombre}}</p>
+                <button class="btn btn-secundary"
+                (click)="btnNoMeGusta()">No me gusta {{hijoNombre}}</button>
+                <input type="text" placeholder= "Entronces que nombre quieres"
+                [(ngModel)]="sNonbreElegido">
               </div>
               <div class="card-footer text-muted">
               </div>

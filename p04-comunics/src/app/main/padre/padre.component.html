@@ -12,10 +12,11 @@
                   class="form-control" name="nombre" id="nombre"
                   [(ngModel)]="sName">
               </div>
-              <app-hijo></app-hijo>
+              <app-hijo [hijoNombre]="sName" 
+              (emitNo)="respuestaAlHijo($event)"></app-hijo>
             </div>
             <div class="card-footer text-muted">
-             Hola {{sName}}
+             Mi hijo se llama {{sName}}
             </div>
           </div>          
     </div>

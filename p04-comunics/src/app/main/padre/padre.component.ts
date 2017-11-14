@@ -7,10 +7,14 @@ import { Component, OnInit, ViewEncapsulation } from '@angular/core';
   encapsulation: ViewEncapsulation.None
 })
 export class PadreComponent implements OnInit {
-
+  sName: string;
   constructor() { }
 
   ngOnInit() {
+  }
+
+  respuestaAlHijo(pNombre) {
+    this.sName = pNombre;
   }
 
 }
