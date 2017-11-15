@@ -5,6 +5,7 @@ import { MainComponent } from './main.component';
 import { ListaComponent } from './lista/lista.component';
 import { ListaV4Component } from './lista-v4/lista-v4.component';
 import { AcumuladorComponent } from './acumulador/acumulador.component';
+import { PipesComponent } from './pipes/pipes.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { AcumuladorComponent } from './acumulador/acumulador.component';
     MainComponent,
     ListaComponent,
     ListaV4Component,
-    AcumuladorComponent
+    AcumuladorComponent,
+    PipesComponent
   ],
   exports: [MainComponent]
 })
