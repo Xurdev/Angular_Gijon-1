@@ -13,7 +13,7 @@ export class CabezaComponent implements OnInit {
    }
 
   ngOnInit() {
-    this.sTitulo = 'Directivas';
+    this.sTitulo = 'Directivas y Pipes';
   }
 
 }
