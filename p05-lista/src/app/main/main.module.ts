@@ -3,13 +3,18 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { MainComponent } from './main.component';
 import { ListaComponent } from './lista/lista.component';
+import { ListaV4Component } from './lista-v4/lista-v4.component';
 
 @NgModule({
   imports: [
     CommonModule,
     FormsModule
   ],
-  declarations: [MainComponent, ListaComponent],
+  declarations: [
+    MainComponent,
+    ListaComponent,
+    ListaV4Component
+  ],
   exports: [MainComponent]
 })
 export class MainModule { }
