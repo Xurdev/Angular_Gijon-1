@@ -4,16 +4,22 @@ import { MainComponent } from './main.component';
 import { BuscarLibrosComponent } from './buscar-libros/buscar-libros.component';
 import { FormsModule } from '@angular/forms';
 import { BuscarAsyncComponent } from './buscar-async/buscar-async.component';
+import { BuscarGoogleComponent } from './buscar-google/buscar-google.component';
+import { HttpModule } from '@angular/http';
+import { BuscarHttpsrvComponent } from './buscar-httpsrv/buscar-httpsrv.component';
 
 @NgModule({
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
+    HttpModule
   ],
   declarations: [
     MainComponent,
     BuscarLibrosComponent,
-    BuscarAsyncComponent
+    BuscarAsyncComponent,
+    BuscarGoogleComponent,
+    BuscarHttpsrvComponent
   ],
   exports: [MainComponent]
 })
